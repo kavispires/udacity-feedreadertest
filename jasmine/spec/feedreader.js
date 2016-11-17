@@ -133,16 +133,17 @@ $(function() {
 
         beforeEach(function(done) {
             loadFeed(0, function() {
-                feed1 = $('feed');
-                done();
+                feed1 = $('.feed').html();
             });
+            loadFeed(1, done);
         });
 
         it('is returning a different feed in every load', function(done){
-            loadFeed(0, function(){
-                feed2 = $('feed');
-            })
-            expect(feed1).not.toBe(feed2);
+            feed2 = $('.feed').html();
+
+            expect(feed1).toBeDefined();
+            expect(feed2).toBeDefined();
+            expect(feed1).not.toEqual(feed2);
             done();
         });
 

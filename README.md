@@ -1,10 +1,12 @@
 # Feed Reader Testing
 
 ## To Run this app
-- Download the application from [github](https://github.com/kavispires/neighborhoodmap).
+
+- Download the application from [github](https://github.com/kavispires/udacity-feedreadertest).
 - Open ```index.html``` to start the app.
 
 ## Test for future functionality
+
 "First Entry" test suite was created for a future functionality to check if an item is being marked as favorite after a user clicks on it. It checks if the _.heart_ element of the first child of _.feed_ has the class _.favorite_.
 
 ------
