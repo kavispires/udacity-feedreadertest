@@ -38,6 +38,7 @@ $(function() {
             });    
         }
 
+        // Loop through all feed entries and run function for each
         for(var i = 0; i < allFeeds.length; i++) {
             hasUrl(allFeeds[i]);
         }
@@ -53,6 +54,7 @@ $(function() {
             });
          }
 
+         // Loop through all feed entries and run function for each
          for(var i = 0; i < allFeeds.length; i++) {
             hasName(allFeeds[i]);
          }
@@ -152,7 +154,7 @@ $(function() {
     // TODO: Add extra test for future functionalities
     describe('First Entry', function() {
 
-        // Triggers click event
+        // Triggers click event and returns true if has class 'favorite'
         function triggerClick() {
             $('.feed:first-child .heart').trigger('click');
             return $('.feed:first-child').hasClass('favorite'); 
