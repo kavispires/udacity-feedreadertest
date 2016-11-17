@@ -1,4 +1,15 @@
-# Project Overview
+# Feed Reader Testing
+
+## To Run this app
+- Download the application from [github](https://github.com/kavispires/neighborhoodmap).
+- Open ```index.html``` to start the app.
+
+## Test for future functionality
+"First Entry" test suite was created for a future functionality to check if an item is being marked as favorite after a user clicks on it. It checks if the _.heart_ element of the first child of _.feed_ has the class _.favorite_.
+
+------
+
+# Udacity Project Overview
 
 In this project you are given a web-based application that reads RSS feeds. The original developer of this application clearly saw the value in testing, they've already included [Jasmine](http://jasmine.github.io/) and even started writing their first test suite! Unfortunately, they decided to move on to start their own company and we're now left with an application with an incomplete test suite. That's where you come in.
 
