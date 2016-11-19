@@ -105,16 +105,15 @@ $(function() {
         beforeEach(function(done) {
             loadFeed(1, function() {
                 $feed1 = $('.feed').html();
-                loadFeed(1, done);
+                loadFeed(0, done);
             });
         });
 
-        it('is returning a different feed in every load', function(done){
+        it('is returning a different feed in every load', function(){
             $feed2 = $('.feed').html();
             expect($feed1).toBeDefined();
             expect($feed2).toBeDefined();
             expect($feed1).not.toEqual($feed2);
-            done();
         });
 
     });
